@@ -1,5 +1,7 @@
-Figure 9: Multi-Organizational Dashboard
-mermaidgraph TB
+# Figure 9: Multi-Organizational Dashboard
+
+```mermaid
+graph TB
     subgraph AGG["Data Aggregation Processing Layer"]
         COLLECT["Multi-Org Data Collector - OAuth 2.0 Security - 500 orgs/sec"]
         ANON["Statistical Anonymization - Differential Privacy - k=5 threshold"]
@@ -71,5 +73,3 @@ mermaidgraph TB
     class RENDER,FILTER,EXPORT,INTERACT visual
     class AUTH,ISOLATE,AUDIT,ENCRYPT security
     class BALANCE,CACHE,CDN,AUTO scale
-Figure Description
-Multi-organizational dashboard with aggregated analytics for enterprise data processing.
